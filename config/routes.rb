@@ -2,15 +2,15 @@ Rails.application.routes.draw do
   devise_for :users
 
   authenticate :user do
-    # resources :resource
+    resources :arguments
 
-    # root to: 'welcome#index', as: :authenticated_root
+    root to: 'arguments#index', as: :authenticated_root
   end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  root 'arguments#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
