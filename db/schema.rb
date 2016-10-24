@@ -11,7 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161020222806) do
+ActiveRecord::Schema.define(version: 20161024203129) do
+
+  create_table "argument_views", force: :cascade do |t|
+    t.integer  "argument_id"
+    t.integer  "user_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  add_index "argument_views", ["argument_id", "user_id"], name: "index_argument_views_on_argument_id_and_user_id", unique: true
+  add_index "argument_views", ["argument_id"], name: "index_argument_views_on_argument_id"
+  add_index "argument_views", ["user_id"], name: "index_argument_views_on_user_id"
 
   create_table "arguments", force: :cascade do |t|
     t.datetime "created_at", null: false
