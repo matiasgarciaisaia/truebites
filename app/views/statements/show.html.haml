@@ -1,0 +1,9 @@
+%p#notice= notice
+
+%p
+  %b Content:
+  = @statement.content
+
+= link_to 'Edit', edit_statement_path(@statement)
+\|
+= link_to 'Back', statements_path

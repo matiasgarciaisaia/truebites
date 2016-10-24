@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   authenticate :user do
     resources :arguments
+    resources :statements
 
     root to: 'arguments#index', as: :authenticated_root
   end
