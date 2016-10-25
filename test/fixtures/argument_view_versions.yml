@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  argument_view_id: 
+  previous_id: 
+
+two:
+  argument_view_id: 
+  previous_id: 
