@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  statement_id: 
+  user_id: 
+  agree: false
+
+two:
+  statement_id: 
+  user_id: 
+  agree: false
