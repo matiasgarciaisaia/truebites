@@ -1,3 +1,21 @@
 // Place all the styles related to the Arguments controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.versionsList {
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+.argumentView, .argumentEdit {
+  background-color: rgba(0, 0, 255, 0.1);
+
+  .statementView, .statementEdit {
+    display: block;
+    width: 80%;
+    margin: auto;
+    border: 1px solid rgba(0, 0, 0, 0);
+
+    &:hover {
+      border-color: black;
+    }
+  }
+}
